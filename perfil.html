@@ -5,16 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <script src="js/jquery-3.6.4.js"></script>
+   <!-- <script src="pong.js"> defer</script>-->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Meu Perfil</h1>
-        <img src="avatar.jpg" alt="Minha foto de perfil">
-        <h2>Informações pessoais</h2>
-        <p>Nome: Aristides Neto</p>
-        <p>Idade: 20</p>
-        <p>Cidade: Natal</p>
+
+    <div class="campo" id="idcampo"></div>
+    <button class="button" id="idbutton">Jogar Pong</button>
+
+    <script>
+
+        var button = document.getElementById("idbutton")
+
+        button.addEventListener("click", function(){
+
+            var campo = document.getElementById("idcampo")
+            if(campo.style.display === "none"){
+                campo.style.display = "block"
+            }else{
+                campo.style.display = "none"
+            }
+        })
+
+
+       console.log(campo);
+        console.log(button);
+       
+       /* $(".button").click(function(){
+            $(".campo").show();
+        }); */
+    </script>
+    
+   <div class="container">
+        <div class="header">
+            <h1>Meu Perfil</h1>
+            <img src="avatar.jpg" alt="Minha foto de perfil">
+            <h2>Informações pessoais</h2>
+            <p>Nome: Aristides Neto</p>
+            <p>Idade: 20</p>
+            <p>Cidade: Natal</p>
+        </div>
     </div>
+
 </body>
 </html>
