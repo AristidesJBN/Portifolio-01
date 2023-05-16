@@ -17,17 +17,20 @@
     <script>
 
         var button = document.getElementById("idbutton")
+        var campo = document.getElementById("idcampo")
+        var idbutton = document.querySelector("#idbutton");
 
         button.addEventListener("click", function(){
 
-            var campo = document.getElementById("idcampo")
             if(campo.style.display === "none"){
                 campo.style.display = "block"
-            }else{
+                idbutton.textContent = "Parar jogo"
+            }
+            else{
                 campo.style.display = "none"
+                idbutton.textContent = "Jogar Pong"
             }
         })
-
 
        console.log(campo);
         console.log(button);

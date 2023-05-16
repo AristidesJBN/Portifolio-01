@@ -42,18 +42,19 @@ p {
 }
 
 .campo{
+    display: none;
     background-color: #000000;
     position:absolute; 
     top: 5%;
-    left: 30%;
+    left: 15%;
     padding: 20px;
     border-radius: 20px;
-    width: 450px;
-    height: 270px;
+    width: 584px;
+    height: 350px;
 }
 
 button{
     position:absolute; 
-    top: 55%;
-    left: 60%;
+    top: 48%;
+    left: 44%;
 }
