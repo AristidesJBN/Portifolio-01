@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
     <script src="js/jquery-3.6.4.js"></script>
+    <script src="pong.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -14,29 +15,6 @@
     <div class="infocard" id="idcard"></div>
     <button class="button" id="idbutton">Jogar Pong</button>
 
-    <script>
-        var button = document.getElementById("idbutton");
-        var campo = document.getElementById("idcampo");
-        var infocard = document.getElementById("idcard");
-
-        button.addEventListener("click", function botao(){
-            if(campo.style.display === "block"){
-                campo.style.display = "none";
-                button.textContent = "Jogar Pong";
-            } else {
-                campo.style.display = "block";
-                button.textContent = "Parar jogo";
-            }
-        });
-
-        function fJS() {
-            if(infocard.style.display === "block"){
-                infocard.style.display = "none";
-            } else {
-                infocard.style.display = "block";
-            }
-        }
-    </script>
     
     <div class="container">
         <div class="header">
@@ -49,15 +27,15 @@
             <p>Projeto: Perfil com Pong</p>
             <p>Linguagens usadas:</p>
 
-            <a href="#" onclick="fJS('orange')">HTML</a>
+            <a href="#" onclick="fJS('orange')" data-color="orange">HTML</a>
             <p style="display: inline;"> | </p>
-            <a href="#" onclick="fJS()">CSS</a>
+            <a href="#" onclick="fJS('blue')" data-color="blue">CSS</a>
             <p style="display: inline;"> | </p>
-            <a href="#" onclick="fJS()">JavaScript</a>
-            
+            <a href="#" onclick="fJS('yellow')" data-color="yellow">JavaScript</a>
+
 
         </div>
     </div>
-
+    <div id="infocard">Conteúdo do infocard</div>
 </body>
 </html>
