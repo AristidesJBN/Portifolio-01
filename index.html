@@ -11,8 +11,9 @@
 <body>
     <div class="container">
         <div class="header">
+            <br>
             <h3>Portifólio</h3>
-            <img src="avatar.jpg" alt="Minha foto de perfil" class="fotoperfil">
+            <img src="img/avatar.jpg" alt="Minha foto de perfil" class="fotoperfil">
             <h6>Informações pessoais</h6>
             <p>Nome: Aristides Neto</p>
             <p>Idade: 20</p>
@@ -21,18 +22,13 @@
             <h6>Projeto: Portifólio v0.1</h6>
             <p>Técnologias usadas:</p>
 
-            <table>
-                <tr>
-                    <td style="color: orangered">HTML</td>
-                    <td>|</td>
-                    <td style="color: yellow">JavaScript</td>
-                </tr>
-                <tr>
-                    <td style="color: cyan">CSS</td>
-                    <td>|</td>
-                    <td style="color: purple">BootStrap</td>
-                </tr>
-                </table>
+            <img src="img/icons8-javascript-48.png" alt="icon-js">
+            <img src="img/icons8-html-48.png" alt="icon-html">
+            <img src="img/icons8-css-48.png" alt="icon-css">
+            <br>
+            <img src="img/icons8-bootstrap-48.png" alt="icon-btsp">
+            <img src="img/icons8-git-48.png" alt="icon-git">
+
         </div>
     </div>
     
@@ -52,30 +48,79 @@
         <h6>2023</h6>
         <p>Ingressei em Tecnologia em Sistemas para Internet no Instituto Federal do Rio Grande do Norte.</p>
         <br>
-        <p>Em setembro, pedi demissão de onde trabalhava pois não havia vaga para desenvolvedor, e eu não gostaria de continuar como suporte, e também, queria adiantar algumas matérias do curso.</p>
+        <p>Em setembro, pedi demissão de onde trabalhava pois não havia vaga para desenvolvedor, e eu não gostaria de continuar como suporte.</p>
     </div>
 
     <div class="card" id="card2">
         <h5>Projetos:</h5>
         <label><h6>Construct 2 (Game Engine):</h6></label>
-        <button onclick="constructPage()">Página dedicada ao Construct 2</button>
+        <button id="btn4">Construct 2</button>
+        <br>
+        <br>
         <label><h6>Card-Jitsu (Club Penguin):</h6></label>
         <button onclick="cardJitsu()">Jogar Card-Jitsu</button>
         <br>
+        <br>
         <label><h6>Assinatura digital:</h6></label>
         <button onclick="memed()">Padronizar imagem em 192x125</button>
+        <br>
+        <br>
+        <label><h6>Lógica em Sistemas Operacionais:</h6></label>
+        <button onclick="atvSO()">Atividade SO(TSI - 2023.1)</button>
     </div>
 
     <div class="card" id="card3">
         <h5>Hobbies:</h5>
-        <p>GYM</p>
-        <p>Cubo mágico</p>
-        <p>Ouvir música</p>
+        <p>Assistir anime:</p>
+        <img src="img/icons8-totoro-100.png" alt="icon-anime" style="position: relative; left: -20px;">
+        <p>Atividade Física:</p>
+        <img src="img/icons8-deadlift-64.png" alt="icon-gym">
+        <p>Cubo mágico:</p>
+        <img src="img/icons8-rubik's-cube-50.png" alt="icon-cubo">
+        <p>Ouvir música:</p>
+        <img src="img/icons8-guitar-64.png" alt="icon-js">
+        <img src="img/icons8-guitar-amp-50.png" alt="icon-js">
+
+    </div>
+
+    <div class="card" id="cardConstruct">
+        <h5>Projetos no Construct 2:</h5>
+        <br>
+
+        <h6>Super Uno Rocket</h6>
+        <p>Meu primeiro projeto no Construct 2, o estilo de jogo é plataforma e se passa num mundo pós-apocalíptico onde houve uma guerra nuclear e as únicas coisas que restaram foram as bombas e o Fiat Uno</p>
+        <img src="img/sur-img.png" alt="sur-img" class="img-c2">
+        <br></br>
+        <button onclick="playSUR()">Jogar Super Uno Rocket</button>
+        <br></br>
+
+
+
+        <h6>Plágio Kingdom</h6>
+        <p>Baseado num projeto de um colega, tentei replicar com o objetivo de por em prática meu conhecimento de lógica</p>
+        <img src="img/pk-img.png" alt="pk-img" class="img-c2">
+        <br></br>
+        <button onclick="playPK()">Jogar Plagio Kingdom</button>
+        <br></br>
+
+
+        
+        <h6>Pelada do Alta Cúpula</h6>
+        <p>Meu primeiro e único projeto grande, de início teve 2 meses de duração.</p>
+        <p>v1.0.0 (Fev - Mar 2022): Foi dado o inicio ao projeto</p>
+        <p>v1.0.1 (Mar - Abr 2022): Acabei tendo um problema na máquina e perdi os arquivos, mas já havia um esboço em mente</p>
+        <p>v1.0.2 (Jun 2023): Foi adicionado +1 jogador em cada time, mudança no menu inicial e revisto alguns erros. Porém, ainda está pendente de correções</p>
+        <img src="img/pac-img.png" alt="pac-img" class="img-c2">
+        <br>
+        <button onclick="playPAC()">Jogar Pelada do AC(v1.0.2)</button>
+
+
+        <img src="img/construct2_logo.png" alt="icon-c2" class="c2">
     </div>
 
     <button class="btnStandard" id="btn1">Minha trajetoria</button>
     <button class="btnStandard" id="btn2">Meus projetos</button>
-    <button class="btnStandard" id="btn3">Hobbies</button>
+    <button class="btnStandard" id="btn3">Vida pessoal</button>
 </body>
 <script src="js/jquery-3.6.4.js"></script>
 <script src="js/index.js"></script>

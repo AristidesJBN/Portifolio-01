@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('card1').style.display = 'none';
       document.getElementById('card2').style.display = 'none';
       document.getElementById('card3').style.display = 'none';
-  }
+      document.getElementById('cardConstruct').style.display = 'none';
+    }
       
     btn1.addEventListener("click", function botao() {
       if (card1.style.display === "block") {
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn2.addEventListener("click", function botao() {
       if (card2.style.display === "block") {
         card2.style.display = "none";
+        document.getElementById('cardConstruct').style.display = 'none';
       } else {
         ocultarTodosCartoes(); 
         card2.style.display = "block";
@@ -36,24 +38,44 @@ document.addEventListener("DOMContentLoaded", function() {
         card3.style.display = "block";
       }
     });
-  
-    var links = document.querySelectorAll("a");
-    links.forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        var color = this.getAttribute("data-color");
-        fJS(color);
-      });
-    });
-  })
 
-  function constructPage() {
-    window.location.href = 'construct2.html';
-}
-  function cardJitsu() {
-    window.location.href = 'https://card-jitsu.netlify.app';
+    btn4.addEventListener("click", function botao() {
+      if (cardConstruct.style.display === "block") {
+        cardConstruct.style.display = "none";
+      } else {
+        cardConstruct.style.display = "block";
+      }
+    });
+  }
+);
+
+var urlCJ = 'https://card-jitsu.netlify.app';
+var urlmemed = 'https://assinatura-med.netlify.app';
+var urlSO = 'https://praticas-so.netlify.app'
+var urlSUR = 'https://superunorocketdemo-01.netlify.app';
+var urlPK = 'https://plagiokingdom.netlify.app';
+var urlPAC = 'https://pdac-102v.netlify.app';
+
+function cardJitsu() {
+  window.open(urlCJ, '_blank');
 }
 
 function memed() {
-  window.location.href = 'https://assinatura-med.netlify.app';
+  window.open(urlmemed, '_blank');
+}
+
+function atvSO() {
+  window.open(urlSO, '_blank');
+}
+
+function playSUR() {
+  window.open(urlSUR, '_blank');
+}
+
+function playPK() {
+  window.open(urlPK, '_blank');
+}
+
+function playPAC() {
+  window.open(urlPAC, '_blank');
 }

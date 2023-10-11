@@ -40,13 +40,13 @@ p {
     background-color: #050505;
     padding: 20px;
     width: 225px;
-    height: 1000px;
+    height: 1800px;
     position: absolute;
     top: 0%;
     left: 0%;
 }
 
-.card {
+#card1 {
     display: none;
     background-color: #000000;
     position: absolute;
@@ -55,7 +55,42 @@ p {
     padding: 20px;
     border-radius: 20px;
     width: 584px;
-    height: 730px;
+    height: 700px;
+}
+
+#card2 {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    height: 275px;
+}
+#card3 {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 160px;
+    height: 470px;
+}
+
+#cardConstruct {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    height: 1750px;
 }
 
 .btnStandard {
@@ -71,3 +106,15 @@ p {
 table {
     margin: 0 auto;
   }
+
+  .c2 {
+    position: relative;
+    left: 175px;
+    top: -1650px;
+    width: 100px;
+    height: 100px;
+}
+  .img-c2 {
+    width: 462px;
+    height: 322px;
+}
