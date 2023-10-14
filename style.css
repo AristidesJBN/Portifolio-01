@@ -40,7 +40,7 @@ p {
     background-color: #050505;
     padding: 20px;
     width: 225px;
-    height: 1800px;
+    height: 619px;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -66,8 +66,8 @@ p {
     left: 240px;
     padding: 20px;
     border-radius: 20px;
-    width: 500px;
-    height: 275px;
+    width: 475px;
+    height: 345px;
 }
 #card3 {
     display: none;
@@ -117,4 +117,52 @@ table {
   .img-c2 {
     width: 462px;
     height: 322px;
+}   
+    
+#cardPong {
+    display: none;
+    position: relative;
+    background-color: black;
+    background-color: #000000;
+    border-radius: 20px;
+    width: 584px;
+    height: 350px;
+    left: 720px;
+}
+
+.paddle {
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+}
+
+#leftPaddle {
+    left: 10px;
+}
+
+#rightPaddle {
+    right: 10px;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+}
+
+.score {
+    position: absolute;
+    color: white;
+}
+
+#player1Score {
+    left: 20px;
+    top: 20px;
+}
+
+#player2Score {
+    right: 20px;
+    top: 20px;
 }

@@ -53,6 +53,11 @@
 
     <div class="card" id="card2">
         <h5>Projetos:</h5>
+        <br>
+        <label><h6>Pong:</h6></label>
+        <button id="btnPong">Jogar Pong</button>
+        <br>
+        <br>
         <label><h6>Construct 2 (Game Engine):</h6></label>
         <button id="btn4">Construct 2</button>
         <br>
@@ -66,7 +71,7 @@
         <br>
         <br>
         <label><h6>Lógica em Sistemas Operacionais:</h6></label>
-        <button onclick="atvSO()">Atividade SO(TSI - 2023.1)</button>
+        <button onclick="atvSO()">Atv SO (TSI - 2023.1)</button>
     </div>
 
     <div class="card" id="card3">
@@ -121,6 +126,16 @@
     <button class="btnStandard" id="btn1">Minha trajetoria</button>
     <button class="btnStandard" id="btn2">Meus projetos</button>
     <button class="btnStandard" id="btn3">Vida pessoal</button>
+
+    <!-- PONG -->
+    <div class="card" id="cardPong">
+        <div id="leftPaddle" class="paddle"></div>
+        <div id="rightPaddle" class="paddle"></div>
+        <div id="ball" class="ball"></div>
+        <div id="player1Score" class="score">Player 1: 0</div>
+        <div id="player2Score" class="score">Player 2: 0</div>
+    </div>
+
 </body>
 <script src="js/jquery-3.6.4.js"></script>
 <script src="js/index.js"></script>
