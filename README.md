@@ -1,2 +1,2 @@
 # PerfilComPong
-Estudo de HTML, CSS e JavaScript
+Apresentação de projetos
