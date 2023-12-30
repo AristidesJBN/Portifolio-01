@@ -39,11 +39,20 @@ p {
 .container {
     background-color: #050505;
     padding: 20px;
-    width: 225px;
-    height: 619px;
+    width: 212.5px;
+    height: 645px;
     position: absolute;
     top: 0%;
     left: 0%;
+}
+
+.detalhes_portifolio {
+    background-color: #1d1d1d;
+    border-radius: 20px;
+}
+
+.social{
+    text-decoration: none;
 }
 
 #card1 {
@@ -55,7 +64,7 @@ p {
     padding: 20px;
     border-radius: 20px;
     width: 584px;
-    height: 700px;
+    height: 590px;
 }
 
 #card2 {
